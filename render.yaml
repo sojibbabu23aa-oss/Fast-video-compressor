@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: fast-video-compressor
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: MAX_UPLOAD_MB
+        value: "500"
